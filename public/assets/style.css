@@ -1,0 +1,33 @@
+body {
+  background-color: chocolate;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background: whitesmoke;
+}
+
+#burger-image {
+  width: 200px;
+  height: 350px;
+  padding: 5px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: thistle;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
