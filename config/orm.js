@@ -1,5 +1,5 @@
 // Import MySQL connection.
-const connection = require("../config/connection.js");
+var connection = require("../config/connection.js");
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
@@ -19,7 +19,7 @@ function printQuestionMarks(num) {
 
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
-  let arr = [];
+  var arr = [];
 
   // loop through the keys and push the key/value as a string int arr
   for (var key in ob) {
@@ -29,7 +29,7 @@ function objToSql(ob) {
 }
    
 // Object for all our SQL statement functions.
-let orm = {
+var orm = {
   all: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {

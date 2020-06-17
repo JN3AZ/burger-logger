@@ -1,9 +1,9 @@
-const express = require("express");
+var express = require("express");
 
-const router = express.Router();
+var router = express.Router();
 
 // Import the model (burger.js) to use its database functions.
-const burger = require("../models/burger.js");
+var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function (req, res) {
@@ -12,7 +12,7 @@ router.get("/", function (req, res) {
 
 router.get("/burgers", function (req, res) {
   burger.all(function (data) {
-    let chooseBurger = {
+    var chooseBurger = {
       burgers: data,
     };
     console.log(chooseBurger);

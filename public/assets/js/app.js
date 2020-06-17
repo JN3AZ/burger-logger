@@ -18,7 +18,7 @@ $(document).ready(function () {
       event.preventDefault();
   
       console.log("add button clicked");
-      const burger = {
+      let burger = {
         burger_name: $(add).val(),
         devoured: $(add).data("eaten"),
       };
