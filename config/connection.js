@@ -24,8 +24,8 @@ else {
   connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
-    database: ''
+    password: 'hacktheplanet',
+    database: 'todoagain_db'
   });
 };
 
