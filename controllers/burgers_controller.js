@@ -28,6 +28,7 @@ router.post("/burgers", function (req, res) {
 });
 
 router.put("/burgers/:id", function (req, res) {
+  console.log("we are in the put");
   burger.update(req.params.id, function (result) {
     console.log(result);
     res.status(200).end();
