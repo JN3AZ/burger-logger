@@ -18,11 +18,7 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs(
   { 
     defaultLayout: "main", 
-    helpers: {
-      devour: function () { 
-          console.log('it has been devoured'); 
-      }
-    } 
+    
   }
 ));
 

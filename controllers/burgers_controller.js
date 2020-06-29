@@ -13,7 +13,7 @@ router.get("/", function (req, res) {
 router.get("/burgers", function (req, res) {
   burger.all(function (data) {
     var chooseBurger = {
-      burgers: data,
+      burgers: data
     };
     console.log(chooseBurger);
     res.render("index", chooseBurger);

@@ -16,7 +16,7 @@
                 {{#unless this.devoured}}
                 <li>
                     <p>{{this.burger_name}}</p>
-                    <button id="devourBtn" data-id={{this.id}} class="gone" type="button" onclick={{devour}}>Devour</button>
+                    <button id="devourBtn-{{this.id}}" data-id={{this.id}} class="gone" type="button">Devour</button>
                 </li>
                 {{/unless}}
                 {{/each}}

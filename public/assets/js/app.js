@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#devourBtn").on("click", function () {
+    $(".gone").on("click", function () {
       event.preventDefault();
       console.log("Devour button clicked");
       let burgerId = $(this).data("id");
